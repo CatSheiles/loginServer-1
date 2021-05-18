@@ -1,0 +1,28 @@
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+<style>
+    html{
+        background: rgb(73, 73, 73);
+        color: white;
+    }
+    body{
+        font-family: 'Open Sans', sans-serif;
+    }
+    code{
+        color: rgb(252, 159, 159);
+    }
+</style>
+
+<body>
+    <h1>Login Server</h1>
+
+    <br>
+    <h3>Server Methods:</h3>
+    <ul>
+        <li>GET / - returns this webpage</li><br>
+        <li>POST /register - register new account</li> <code>{usr: 'username', password: 'hashed password', salt:'password salt'}</code><br><br>
+        <li>POST /salt - get the salt value for a particular user</li> <code>{usr: 'username'}</code><br><br>
+        <li>POST /login - logs a user in to an existing account</li><code>{usr: 'username', password:'Hased and salted password'}</code>
+    </ul>
+</body>
